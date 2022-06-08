@@ -1,0 +1,149 @@
+body
+{
+    background: rgb(0, 0, 0);
+    height:100vh;
+    background-image: url(../img4.jpg);
+	background-repeat : no-repeat;
+	background-position:center;
+	background-size:cover;
+	/* opacity:0.5; */
+}
+
+#top, #top_home
+{
+    color: black;
+    background-color: rgb(243, 197, 46);
+    text-align: center;
+}
+
+header #top_home
+{
+    position: relative;
+    top: 50px;
+}
+
+.option
+{
+    width:200px;
+	padding:5px;
+	margin:50px;
+    font-size: 150%;
+    font-variant: small-caps;
+    border:solid 4px #008080;
+	background-color:#b3e5ef;
+	text-decoration:none;
+}
+
+.option:hover,.option:focus
+{
+	background-color:#e17e7e;
+}
+
+.option:active
+{
+	color:white;
+}
+
+#ques h2
+{
+    
+    border:solid 4px #008080;
+	background-color:#daff0a;
+	text-decoration:none;
+    text-align: center;
+    font-size: 200%;
+}
+
+#correct
+{
+    border:solid 4px #008080;
+	background-color:#daff0a;
+	text-decoration:none;
+    text-align: center;
+    font-size: 200%;
+    display:none;
+}
+
+#incorrect
+{
+    border:solid 4px #008080;
+	background-color:#daff0a;
+	text-decoration:none;
+    text-align: center;
+    font-size: 200%;
+    display:none;
+}
+
+#random_gen
+{
+    border:solid 4px #008080;
+	background-color:#daff0a;
+    padding: 5px;
+    width: 500px;
+	text-decoration:none;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 200%;
+}
+
+#random_gen:hover,#random_gen:focus, #next:hover, #next:focus
+{
+	background-color:#e17e7e;
+}
+
+#random_gen:active, #next:active
+{
+	color:white;
+}
+
+#generate
+{
+    text-align: center;
+    font-variant: small-caps;
+    width:700px;
+	padding:10px;
+	margin:auto;
+}
+
+#rando
+{
+    border:solid 4px #008080;
+	background-color:#daff0a;
+    padding: 5px;
+    width: 300px;
+	text-decoration:none;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 130%;
+    margin: auto;
+    display: none;
+}
+
+#link
+{
+    text-align: center;
+    /* display: inline-block; */
+    /* width:200px; */
+	padding:10px;
+	margin:auto;
+}
+
+div #random_gen
+{
+    margin-top: 70px;
+}
+
+#next
+{
+    border:solid 4px #008080;
+	background-color:#daff0a;
+    display: inline-block;
+    padding: 5px;
+    width: 500px;
+	text-decoration:none;
+    font-variant: small-caps;
+    text-align: center;
+    margin: auto;
+    font-size: 200%;
+}
+

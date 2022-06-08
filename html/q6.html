@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz page 6</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/quiz.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="top">Quiz</h1>
+    </header>
+
+    <!-- Source: https://www.ef.com/wwen/blog/language/questions-virtual-pub-quiz/ -->
+
+    <section id="ques">
+        <h2>When was Netflix founded?</h2>
+        <button onclick="right()" class="option">1997</button>
+        <button onclick="wrong()" class="option">2001</button>
+        <button onclick="wrong()" class="option">2009</button>
+        <button onclick="wrong()" class="option">2015</button>
+    </section>
+
+    <section>
+        <h2 id="correct">Correct</h2>
+        <h2 id="incorrect">Incorrect</h2>
+    </section>
+
+    <section id="generate">
+        <button onclick="randomise(); random_display()" id="random_gen">Generate random number</button>
+    </section>
+
+    <p id="rando">Random number = -1</p>
+
+    <footer id="link">
+        <a id="next" href="q7.html">Next</a>
+    </footer>
+    
+</body>
+
+</html>
