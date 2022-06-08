@@ -6,13 +6,20 @@ body
 	background-repeat : no-repeat;
 	background-position:center;
 	background-size:cover;
-	/* opacity:0.5; */
 }
 
 #top, #top_home
 {
     color: black;
     background-color: rgb(243, 197, 46);
+    text-align: center;
+}
+
+#qno
+{
+    font-size: 150%;
+    color: black;
+    background-color: rgb(30, 163, 224);
     text-align: center;
 }
 
@@ -57,7 +64,7 @@ header #top_home
 #correct
 {
     border:solid 4px #008080;
-	background-color:#daff0a;
+	background-color:#54fa4e;
 	text-decoration:none;
     text-align: center;
     font-size: 200%;
@@ -67,7 +74,7 @@ header #top_home
 #incorrect
 {
     border:solid 4px #008080;
-	background-color:#daff0a;
+	background-color:#f34028;
 	text-decoration:none;
     text-align: center;
     font-size: 200%;
@@ -86,9 +93,14 @@ header #top_home
     font-size: 200%;
 }
 
-#random_gen:hover,#random_gen:focus, #next:hover, #next:focus
+#random_gen:hover,#random_gen:focus 
 {
 	background-color:#e17e7e;
+}
+
+#next:hover, #next:focus
+{
+    background-color: #2f972b;
 }
 
 #random_gen:active, #next:active
@@ -122,8 +134,6 @@ header #top_home
 #link
 {
     text-align: center;
-    /* display: inline-block; */
-    /* width:200px; */
 	padding:10px;
 	margin:auto;
 }
@@ -136,9 +146,10 @@ div #random_gen
 #next
 {
     border:solid 4px #008080;
-	background-color:#daff0a;
+	background-color: rgb(151 28 235);
     display: inline-block;
     padding: 5px;
+    color: white;
     width: 500px;
 	text-decoration:none;
     font-variant: small-caps;
@@ -146,4 +157,3 @@ div #random_gen
     margin: auto;
     font-size: 200%;
 }
-
