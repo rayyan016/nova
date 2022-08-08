@@ -18,13 +18,13 @@ function randomise()
 {
     var n = Math.floor(Math.random() * 10) + 1;
     var next = document.getElementById("next");
-    var num = document.getElementById("rando");
-    num.innerHTML = "Random number = "+n;
+//     var num = document.getElementById("rando");
+//     num.innerHTML = "Random number = "+n;
     next.href = "q"+n+".html";
 }
 
-function random_display()
-{
-    var i = document.getElementById("rando");
-    i.style.display="block";
-}
+// function random_display()
+// {
+//     var i = document.getElementById("rando");
+//     i.style.display="block";
+// }
