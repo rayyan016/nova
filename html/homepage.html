@@ -8,7 +8,7 @@
     <script src="../js/quiz.js"></script>
 </head>
 
-<body>
+<body onload="scoreDisplayOnLoad()">
 
     <header>
         <h1 id="top_home">Quiz Application using Random number generator</h1>
@@ -19,6 +19,11 @@
     </div>
 
 <!--     <p id="rando">Random number = -1</p> -->
+
+    <div id="sc">
+        <p id="scC"> Correct = 0</p>
+        <!-- <p id="scI"> Incorrect = 0</p>  -->
+    </div>
 
     <div id="link">
         <a id="next" onclick="randomise()" href="q1.html">Proceed to Quiz</a>
