@@ -8,10 +8,10 @@
     <script src="../js/quiz.js"></script>
 </head>
 
-<body>
+<body onload="scoreDisplayOnLoad()">
 
     <header>
-        <h1 id="top">Quiz</h1>
+        <a href="homepage.html" id="top">Quiz</a>
         <h3 id="qno">Question 5</h3>
     </header>
 
@@ -19,7 +19,7 @@
 
     <section id="ques">
         <h2>Which driver has won the most Formula 1 championships?</h2>
-        <button onclick="right()" class="option">Michael Schumacher</button>
+        <button onclick="right(); scoreDisplayCorrect()" class="option">Michael Schumacher</button>
         <button onclick="wrong()" class="option">Max Verstappen</button>
         <button onclick="wrong()" class="option">Charles Leclerc</button>
         <button onclick="wrong()" class="option">Sergio Perez</button>
@@ -35,6 +35,12 @@
     </section>
 
     <p id="rando">Random number = -1</p> -->
+
+
+    <div id="sc">
+        <p id="scC"> Correct = 0</p>
+        <!-- <p id="scI"> Incorrect = 0</p>  -->
+    </div>
 
     <footer id="link">
         <a id="next" onclick="randomise()" href="q6.html">Next</a>
