@@ -8,10 +8,10 @@
     <script src="../js/quiz.js"></script>
 </head>
 
-<body>
+<body onload="scoreDisplayOnLoad()">
 
     <header>
-        <h1 id="top">Quiz</h1>
+        <a href="homepage.html" id="top">Quiz</a>
         <h3 id="qno">Question 9</h3>
     </header>
 
@@ -19,7 +19,7 @@
 
     <section id="ques">
         <h2>Which artist painted the ceiling of the Sistine Chapel in Rome?</h2>
-        <button onclick="right()" class="option">Michelangelo</button>
+        <button onclick="right(); scoreDisplayCorrect()" class="option">Michelangelo</button>
         <button onclick="wrong()" class="option">Raphael</button>
         <button onclick="wrong()" class="option">Leonardo</button>
         <button onclick="wrong()" class="option">Donatello</button>
@@ -36,6 +36,12 @@
 
     <p id="rando">Random number = -1</p> -->
 
+
+    <div id="sc">
+        <p id="scC"> Correct = 0</p>
+        <!-- <p id="scI"> Incorrect = 0</p>  -->
+    </div>
+    
     <footer id="link">
         <a id="next" onclick="randomise()" href="q10.html">Next</a>
     </footer>
