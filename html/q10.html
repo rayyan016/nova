@@ -8,10 +8,10 @@
     <script src="../js/quiz.js"></script>
 </head>
 
-<body>
+<body onload="scoreDisplayOnLoad()">
 
     <header>
-        <h1 id="top">Quiz</h1>
+        <a href="homepage.html" id="top">Quiz</a>
         <h3 id="qno">Question 10</h3>
     </header>
 
@@ -19,7 +19,7 @@
 
     <section id="ques">
         <h2>Which of the following empires had no written language?</h2>
-        <button onclick="right()" class="option">Incan</button>
+        <button onclick="right(); scoreDisplayCorrect()" class="option">Incan</button>
         <button onclick="wrong()" class="option">Aztec</button>
         <button onclick="wrong()" class="option">Egyptian</button>
         <button onclick="wrong()" class="option">Roman</button>
@@ -35,6 +35,11 @@
     </section> -->
 
 <!--     <p id="rando">Random number = -1</p> -->
+
+    <div id="sc">
+        <p id="scC"> Correct = 0</p>
+        <!-- <p id="scI"> Incorrect = 0</p>  -->
+    </div>
 
     <footer id="link">
         <a id="next" onclick="randomise()" href="q1.html">Next</a>
